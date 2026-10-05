@@ -31,3 +31,16 @@
 @media(max-width:480px){.top{align-items:flex-start}.brand{font-size:24px}.brand span{letter-spacing:3px}.top-actions{margin-left:auto}.lang{max-width:210px}.lang a{padding:5px 6px}}
 @media(max-width:420px){.shell{padding-inline:10px}.booking-visual{height:205px;min-height:205px}.booking-panel{padding:18px 13px}.card{grid-template-columns:46px 1fr;padding:12px}.card:before{width:46px;height:46px}.contact-shortcuts a{font-size:10px;padding:9px 3px}}
 @media(min-width:621px) and (max-width:1024px){.booking-visual{height:auto!important;min-height:0!important;display:grid!important;grid-template-rows:340px auto!important;background:#eadfd1!important}.booking-visual img{width:100%!important;height:340px!important;object-fit:cover!important;object-position:center 24%!important}.booking-visual:after{display:none!important}.visual-copy{position:static!important;left:auto!important;right:auto!important;bottom:auto!important;padding:18px 22px 20px!important;background:linear-gradient(135deg,#9b6a36,#b98b56)!important;color:#fff!important}.visual-copy .kicker{color:#fbe1bd!important}.visual-copy h2{font-size:30px!important;margin:7px 0 8px!important}.visual-copy p{color:#fff8f0!important;line-height:1.45!important}.booking-panel{border-radius:0 0 20px 20px!important}}
+
+
+/* Booking typography and service categories */
+body,button,input,select,textarea{font-family:"Segoe UI",Arial,Helvetica,sans-serif;line-height:1.5}
+.main h1,.visual-copy h2{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-weight:600;letter-spacing:-.025em}
+.card b{font-weight:600;font-size:16px}.field label{font-size:13px}.field select{font-size:16px}.selected-price{color:var(--gold);font-weight:700;margin:8px 0 0}.contact-shortcuts{grid-template-columns:repeat(2,1fr)}
+#services .card::before{background-image:url("assets/optimized/booking-laser-hair-removal.webp")}
+#services .card[data-group="waxing"]::before{background-image:url("assets/optimized/waxing-pricing.webp")}
+#services .card[data-group="skin"]::before{background-image:url("assets/optimized/miki-skin-care-enhanced.webp")}
+#services .card[data-group="acne"]::before{background-image:url("assets/optimized/service-acne-treatment.webp")}
+#services .card[data-group="body"]::before{background-image:url("assets/optimized/service-body-care-20260914.webp")}
+#services .card[data-group="training"]::before{background-image:none;background-color:var(--ivory)}
+.card:focus-visible,.btn:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}

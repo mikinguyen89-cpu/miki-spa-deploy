@@ -6,7 +6,7 @@
 <title>Đặt lịch | Miki Skin Spa</title>
 <meta content="Đặt lịch Miki Skin Spa tại 47 Cô Giang, Hải Châu, Đà Nẵng" name="description"/>
 <link href="https://www.miki-spa.com/booking.html" rel="canonical"/>
-<link href="booking-final.css?v=20260917-final" rel="stylesheet"/>
+<link href="booking-final.css?v=20261005-services" rel="stylesheet"/>
 <style id="booking-laser-thumb">#services .card[data-service^="laser_"]::before{background-image:url('assets/optimized/booking-laser-hair-removal.webp')!important;background-position:center!important}</style>
 </head>
 <body>
@@ -40,26 +40,20 @@
 </div>
 <section class="step active">
 <div class="kicker" id="kicker1"></div><h1 id="title1"></h1><p class="lead" id="lead1"></p>
-<div class="grid" id="services">
-<button class="card" data-price="500.000đ" data-service="laser_underarm"><b>Laser Hair Removal</b><small id="svc1desc"></small><span class="price">500.000đ</span></button>
-<button class="card" data-price="600.000đ" data-service="laser_bikini"><b>Laser Hair Removal</b><small id="svc2desc"></small><span class="price">600.000đ</span></button>
-<button class="card" data-price="700.000đ" data-service="laser_lowerlegs"><b>Laser Hair Removal</b><small id="svc3desc"></small><span class="price">700.000đ</span></button>
-<button class="card" data-price="180.000đ" data-service="wax_underarm"><b>Waxing</b><small id="svc4desc"></small><span class="price">180.000đ</span></button>
-<button class="card" data-price="500.000đ" data-service="facial"><b>Skin Care</b><small id="svc5desc"></small><span class="price">500.000đ</span></button>
-<button class="card" data-price="900.000đ" data-service="acne"><b>Acne Treatment</b><small id="svc6desc"></small><span class="price">900.000đ</span></button>
-</div>
+<div class="grid" id="services"></div>
+<div class="field"><label id="detailLabel" for="serviceDetail"></label><select id="serviceDetail" disabled></select><p class="selected-price" id="servicePrice" aria-live="polite"></p></div>
 </section>
 <section class="step">
 <div class="kicker" id="kicker2"></div><h1 id="title2"></h1><p class="lead" id="lead2"></p>
-<div class="field"><label id="dateLabel"></label><input id="date" type="date"/></div>
+<div class="field"><label id="dateLabel" for="date"></label><input id="date" type="date"/></div>
 <div class="field"><label id="timeLabel"></label><div class="times" id="times"></div></div>
 </section>
 <section class="step">
 <div class="kicker" id="kicker3"></div><h1 id="title3"></h1><p class="lead" id="lead3"></p>
-<div class="field"><label id="nameLabel"></label><input id="name"/></div>
-<div class="field"><label id="phoneLabel"></label><input id="phone" inputmode="tel"/></div>
-<div class="field"><label id="contactLabel"></label><select id="contact"></select></div>
-<div class="field"><label id="noteLabel"></label><textarea id="note" rows="4"></textarea></div>
+<div class="field"><label id="nameLabel" for="name"></label><input id="name"/></div>
+<div class="field"><label id="phoneLabel" for="phone"></label><input id="phone" inputmode="tel"/></div>
+<div class="field"><label id="contactLabel" for="contact"></label><select id="contact"></select></div>
+<div class="field"><label id="noteLabel" for="note"></label><textarea id="note" rows="4"></textarea></div>
 </section>
 <section class="step">
 <div class="kicker" id="kicker4"></div><h1 id="title4"></h1><p class="lead" id="lead4"></p>
@@ -72,9 +66,7 @@
 </section>
 <div class="contact-shortcuts">
 <a href="https://wa.me/84935555170" rel="noopener" target="_blank"><b>◉</b>WhatsApp</a>
-<a href="https://zalo.me/0935555170" rel="noopener" target="_blank"><b>◉</b>Zalo</a>
 <a href="https://t.me/+84935555170" rel="noopener" target="_blank"><b>◉</b>Telegram</a>
-<a href="https://maps.app.goo.gl/Mswc1KA4MVyok92NA?g_st=iz" rel="noopener" target="_blank"><b>⌖</b>Google Maps</a>
 </div>
 <div class="bottom"><button class="btn back" id="back"></button><button class="btn next" id="next"></button></div>
 </div>
@@ -86,6 +78,7 @@
 </div>
 </main>
 </div>
-<script src="booking-final.js?v=20260917-final"></script>
+<script src="content-data.js?v=20261005-services"></script>
+<script src="booking-final.js?v=20261005-services"></script>
 </body>
 </html>
