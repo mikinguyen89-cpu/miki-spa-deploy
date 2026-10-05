@@ -15,7 +15,7 @@
 <link as="image" href="assets/optimized/miki-hero-no-poster-lamp.webp" rel="preload"/>
 <link href="styles.css?v=20260910c" rel="stylesheet">
 <link href="i18n-layout.css?v=20260910c" rel="stylesheet"/>
-<link href="polish.css?v=20260915-reviews" rel="stylesheet"><link href="laser-media.css?v=20260913-four" rel="stylesheet"/><link href="v31-balance.css?v=20260916" rel="stylesheet"/><link href="v32-refinement.css?v=20260916-v32" rel="stylesheet"/></head>
+<link href="polish.css?v=20260915-reviews" rel="stylesheet"><link href="laser-media.css?v=20260913-four" rel="stylesheet"/><link href="v31-balance.css?v=20260916" rel="stylesheet"/><link href="v32-refinement.css?v=20260916-v32" rel="stylesheet"/><link rel="stylesheet" href="combo-booking.css?v=20261005-combo"></head>
 <body>
 <div class="announcement" data-miki="announcement">Miki Skin Spa · 47 Cô Giang, Hải Châu, Đà Nẵng · Hotline / Zalo 0935 555 170 · Chào đón khách quốc tế</div>
 <div class="utility-bar">
@@ -162,10 +162,10 @@
 <div><span>⚡</span><strong>Laser Hair Removal</strong><small>Công nghệ triệt lông chuyên dụng</small></div>
 <div><span>✦</span><strong>Personalized Care</strong><small>Tư vấn theo tình trạng da &amp; đặc điểm lông</small></div>
 </div>
-<div class="catalog-benefit-note">
-<div><span>COMBO SAVINGS</span><strong>Gói combo chọn lọc có thể tiết kiệm đến 10%</strong></div>
-<p>Mức giảm và vùng áp dụng sẽ được Miki xác nhận khi tư vấn để phù hợp với từng dịch vụ.</p>
-</div>
+<section id="miki-combo" aria-labelledby="mc-offer-title">
+<div class="mc-intro"><div class="mc-eyebrow" data-mc-copy="eyebrow">MIKI COMBO</div><h2 id="mc-offer-title"><span data-mc-copy="heading">Combo tiết kiệm</span><br><em data-mc-copy="upto">đến 20%</em></h2><p data-mc-copy="intro">Kết hợp dịch vụ bạn yêu thích. Miki xác nhận ưu đãi trước khi thực hiện.</p></div>
+<div><div class="mc-offer-list"><button class="mc-offer" type="button" data-mc-open="1"><span class="mc-num">01</span><span><strong>Combo 1</strong><small data-mc-copy="p1">Nhiều vùng trong một buổi</small></span><span class="mc-arrow" aria-hidden="true">→</span></button><button class="mc-offer" type="button" data-mc-open="2"><span class="mc-num">02</span><span><strong>Combo 2</strong><small data-mc-copy="p2">Liệu trình theo nhu cầu</small></span><span class="mc-arrow" aria-hidden="true">→</span></button></div><button type="button" class="mc-primary mc-open-main" data-mc-open="1"><span data-mc-copy="open">CHỌN COMBO CỦA BẠN</span><span aria-hidden="true">→</span></button><div class="mc-benefits"><span data-mc-copy="benefit1"></span><span data-mc-copy="benefit2"></span><span data-mc-copy="benefit3"></span></div></div>
+</section>
 <div aria-label="Giá phổ biến tại Miki" class="popular-pricing">
 <article><span>Laser Hair Removal</span><strong>Nách nữ</strong><b>500.000đ</b></article>
 <article><span>Laser Hair Removal</span><strong>Bikini cơ bản</strong><b>600.000đ</b></article>
@@ -565,5 +565,13 @@
 <div class="laser-dialog-head"><h2 data-laser-copy="title" id="laserVideoTitle">Video triệt lông tại Miki</h2><button aria-label="Đóng video" data-laser-close="" type="button">×</button></div>
 <video controls="" id="laserServiceVideo" playsinline="" poster="assets/laser/laser-session.jpg" preload="none"></video>
 <p class="laser-video-error" data-laser-copy="error" hidden="">Video chưa phát được. Vui lòng thử lại.</p>
-</dialog><script src="laser-media.js?v=20260914-two"></script></body>
+</dialog><script src="laser-media.js?v=20260914-two"></script><dialog id="mikiComboDialog" aria-labelledby="mc-dialog-title" aria-describedby="mc-dialog-lead">
+<header class="mc-dialog-header"><div><div class="mc-eyebrow">MIKI PRIVATE COMBO</div><h2 id="mc-dialog-title" data-mc-copy="title"></h2><p id="mc-dialog-lead" data-mc-copy="lead"></p></div><button type="button" class="mc-close" id="mc-close" aria-label="Đóng">×</button></header>
+<div class="mc-dialog-body"><form id="mc-form" class="mc-form"><div id="mc-form-content"><div id="mc-step-one"><div class="mc-plan-switch"><button type="button" class="mc-plan" data-mc-plan="1" aria-pressed="true"><b>Combo 1</b><small data-mc-copy="p1"></small></button><button type="button" class="mc-plan" data-mc-plan="2" aria-pressed="false"><b>Combo 2</b><small data-mc-copy="p2"></small></button></div><div class="mc-field"><label for="mc-category" data-mc-copy="group"></label><select id="mc-category"></select></div><p class="mc-help" id="mc-choice-help" data-mc-copy="help"></p><div id="mc-choices" class="mc-choice-list" role="group" aria-describedby="mc-choice-help"></div><p id="mc-error" class="mc-error" role="alert"></p><button type="button" class="mc-primary" id="mc-next" data-mc-copy="next"></button></div>
+<div id="mc-step-two" hidden><h3 data-mc-copy="contact"></h3><div class="mc-field"><label for="mc-name" data-mc-copy="name"></label><input id="mc-name" name="name" autocomplete="name" maxlength="100" required></div><div class="mc-field"><label for="mc-phone" data-mc-copy="phone"></label><input id="mc-phone" name="contact" autocomplete="tel" maxlength="80" required></div><div class="mc-field"><label for="mc-channel" data-mc-copy="channel"></label><select id="mc-channel"><option>WhatsApp</option><option>Telegram</option></select></div><div class="mc-fields-grid"><div class="mc-field"><label for="mc-date" data-mc-copy="date"></label><input id="mc-date" type="date"></div><div class="mc-field"><label for="mc-time" data-mc-copy="time"></label><input id="mc-time" type="time" min="08:30" max="21:30"></div></div><div class="mc-field"><label for="mc-note" data-mc-copy="note"></label><textarea id="mc-note" rows="3" maxlength="1000"></textarea></div><p class="mc-help" data-mc-copy="privacy"></p><div class="mc-actions"><button type="button" class="mc-secondary" id="mc-back" data-mc-copy="back"></button><button type="submit" class="mc-primary" data-mc-copy="send"></button></div></div></div>
+<div class="mc-ready" id="mc-ready" hidden><div class="mc-ready-icon" aria-hidden="true">✓</div><h3 data-mc-copy="ready"></h3><p data-mc-copy="readyLead"></p><pre id="mc-message"></pre><a id="mc-send-link" class="mc-primary" target="_blank" rel="noopener"></a><button type="button" class="mc-secondary" id="mc-edit" data-mc-copy="edit"></button></div></form>
+<aside class="mc-aside"><h3 data-mc-copy="summary"></h3><p class="mc-help" id="mc-empty" data-mc-copy="empty"></p><ul class="mc-selected" id="mc-selected"></ul><div class="mc-total" aria-live="polite"><small data-mc-copy="total"></small><strong id="mc-total">—</strong><small id="mc-quote"></small></div><div class="mc-save-note" data-mc-copy="save"></div></aside></div>
+</dialog>
+<script defer src="combo-booking.js?v=20261005-combo"></script></body>
 </html>
+
