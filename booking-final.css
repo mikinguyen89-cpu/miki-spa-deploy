@@ -38,7 +38,8 @@ body,button,input,select,textarea{font-family:"Segoe UI",Arial,Helvetica,sans-se
 .main h1,.visual-copy h2{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-weight:600;letter-spacing:-.025em}
 .card b{font-weight:600;font-size:16px}.field label{font-size:13px}.field select{font-size:16px}.selected-price{color:var(--gold);font-weight:700;margin:8px 0 0}.contact-shortcuts{grid-template-columns:repeat(2,1fr)}
 #services .card::before{background-image:url("assets/optimized/booking-laser-hair-removal.webp")}
-#services .card[data-group="waxing"]::before{background-image:url("assets/optimized/waxing-pricing.webp")}
+/* Photo: Larysa Stratiichuk / Pexels — https://www.pexels.com/photo/close-up-of-waxing-procedure-in-salon-35103884/ */
+#services .card[data-group="waxing"]::before{background-image:url("https://images.pexels.com/photos/35103884/pexels-photo-35103884.jpeg?cs=srgb&dl=pexels-larysa-stratiichuk-1606923648-35103884.jpg&fm=jpg");background-position:center}
 #services .card[data-group="skin"]::before{background-image:url("assets/optimized/miki-skin-care-enhanced.webp")}
 #services .card[data-group="acne"]::before{background-image:url("assets/optimized/service-acne-treatment.webp")}
 #services .card[data-group="body"]::before{background-image:url("assets/optimized/service-body-care-20260914.webp")}
