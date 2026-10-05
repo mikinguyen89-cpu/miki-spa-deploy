@@ -3,7 +3,7 @@ from urllib.parse import quote
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, WebAppInfo
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
-TOKEN=os.environ["BOT_TOKEN"]
+TOKEN=os.environ["BOT_TOKEN"].strip()
 BOOKING="https://www.miki-spa.com/booking.html"
 WEB="https://www.miki-spa.com/"
 WA="https://wa.me/84935555170"
